@@ -1,0 +1,64 @@
+{
+    "items": [
+        {
+            "type": "basemap",
+            "peso": 1,
+            "nombre": "Mapas base",
+            "short_abstract": "",
+            "class": "",
+            "seccion": "mapasbase",
+            "capas": [
+                {
+                    "titulo": "Imágenes IGN",
+                    "nombre": "tms",
+                    "servicio": "",
+                    "version": "",
+                    "attribution": "",
+                    "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capabaseargenmap@EPSG%3A3857@png/{z}/{x}/{y}.png",
+                    "legendImg": ""
+                },
+                {
+                    "titulo": "Imágenes satelitales",
+                    "nombre": "here_imagery",
+                    "servicio": "tms",
+                    "version": "1.0.0",
+                    "attribution": "Imágenes satelitales © here",
+                    "host": "https://2.aerial.maps.api.here.com/maptile/2.1/maptile/newest/satellite.day/{z}/{x}/{y}/256/png8?app_id=XiMlA4JwMurUFFYUWYe3&app_code=oTsmqovbl2YudG3E0UlxDA",
+                    "legendImg": ""
+                },
+                {
+                    "titulo": "Imágenes Topográfica",
+                    "nombre": "",
+                    "servicio": "tms",
+                    "version": "",
+                    "attribution": "",
+                    "host": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+                    "legendImg": ""
+                }
+            ]
+        },
+        {
+            "type": "wmslayer",
+            "peso": 70,
+            "nombre": "Industria y servicios",
+            "short_abstract": "Industrias, producción agropecuaria, minería, energía, comunicaciones, etc.",
+            "class": "",
+            "seccion": "industria-servicios",
+            "servicio": "wfs",
+            "version": "1.3.0",
+            "host": "https://geoservicios3.conae.gov.ar/geoserver/HumedadDeSuelos/wms"
+        },
+        {
+            "type": "wmslayer",
+            "peso": 120,
+            "nombre": "Modelos digitales de elevaciones",
+            "short_abstract": "Modelos digitales de elevaciones",
+            "class": "",
+            "seccion": "mde",
+            "servicio": "wms",
+            "version": "1.3.0",
+            "host": "https://geoservicios3.conae.gov.ar/geoserver/Cultivos/wms"
+        }
+    ],
+    "template": "climap"
+}
