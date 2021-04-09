@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  climap:
+    build: .
+    image: docker_climap
+    restart: always
+    ports:
+        - 8880:80
