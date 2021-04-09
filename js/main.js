@@ -8,7 +8,8 @@ const impresorItemCapaBase = new ImpresorItemCapaBaseHTML(),
     profiles: {},
     templates: [
       "ign-geoportal-basic",
-      "ign-geoportal-minimal"
+      "ign-geoportal-minimal",
+      "climap"
     ],
 
     init: async function (data) {
